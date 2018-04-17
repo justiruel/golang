@@ -42,11 +42,22 @@ for _, card := range d {
 ```
 maka index tidak perlu di println
 
-
-
 # ARRAY vs SLICE
 Array : fixed length list of things
 Slice : an array that can grow or shrink
 
+# Akses Slice
+```
+dataku[StartIndexIncluding:upToIndexNotIncluding]
+```
+
+contoh 
+```
+dataku := []string{"satu", "dua", "tiga", "empat", "lima"}
+fmt.Println(dataku[2:3])
+
+//["tiga"]
+```
+cara bacanya : start dari index 2 ("tiga"), dan index 2 ("tiga") termasuk  yang di ambil, sampai index 3 ("empat") dan index 4 tidak termasuk yang diambil 
 
 # generic data type function?
