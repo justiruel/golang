@@ -61,4 +61,23 @@ fmt.Println(dataku[2:3])
 ```
 cara bacanya : start dari index 2 ("tiga"), dan index 2 ("tiga") termasuk  yang di ambil, sampai index 3 ("empat") dan index 4 tidak termasuk yang diambil 
 
+# Multi return Value
+di golang satu function bisa punya banyak return sekaligus <br/>
+contoh
+```
+package main
+import (
+	"fmt"
+	"strconv"
+)
+func main() {
+	nama, umur := multiReturnValue("irul", 26)
+	fmt.Println(nama, umur)
+}
+
+func multiReturnValue(nama string, umur int) (string, string) {
+	return "namamu " + nama, "umurmu " + strconv.Itoa(umur)
+}
+```
+
 # generic data type function?
