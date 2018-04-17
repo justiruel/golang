@@ -24,3 +24,6 @@ dapat ditulis dengan
 ```
 card := "Ace of spades"
 ```
+
+# Semua variable yang dideklarasi harus digunakan
+di GO semua variable yang dideklarasi harus digunakan jika tidak maka akan error
