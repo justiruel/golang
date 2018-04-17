@@ -56,6 +56,7 @@ contoh
 dataku := []string{"satu", "dua", "tiga", "empat", "lima"}
 fmt.Println(dataku[2:3])
 
+//return
 //["tiga"]
 ```
 cara bacanya : start dari index 2 ("tiga"), dan index 2 ("tiga") termasuk  yang di ambil, sampai index 3 ("empat") dan index 4 tidak termasuk yang diambil 
