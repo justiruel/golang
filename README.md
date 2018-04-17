@@ -27,3 +27,7 @@ card := "Ace of spades"
 
 # Semua variable yang dideklarasi harus digunakan
 di GO semua variable yang dideklarasi harus digunakan jika tidak maka akan error
+
+# ARRAY vs SLICE
+Array : fixed length list of things
+Slice : an array that can grow or shrink
