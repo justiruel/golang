@@ -26,7 +26,23 @@ card := "Ace of spades"
 ```
 
 # Semua variable yang dideklarasi harus digunakan
-di GO semua variable yang dideklarasi harus digunakan jika tidak maka akan error
+di GO semua variable yang dideklarasi harus digunakan jika tidak maka akan error<br/>
+untuk meng-ignore/mengabaikan variable maka gunakan "_" <br/>
+contoh :
+```
+for index, card := range d {
+	fmt.Println(index, card)
+}
+```
+pada code diatas jika ingin mengabaikan index lakukan seperti ini 
+```
+for _, card := range d {
+	fmt.Println(card)
+}
+```
+maka index tidak perlu di println
+
+
 
 # ARRAY vs SLICE
 Array : fixed length list of things
