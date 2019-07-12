@@ -18,6 +18,7 @@ remove manual folder $GOPATH/src/github.com/bxcodec/gomodmultiplies
 ```
 
 ## Go Module (ref : https://medium.com/easyread/mencoba-go-module-pada-golang-13ae343ce529)
+#### catatan, jika golang enggak support go mod maka upgrade dengan versi terbaru
 Guna : dengan menerapkan go mod, maka proyek enggak harus ditaruh gopath dapat di runing serta dapat mengakses library pada folder C:\Users\user\go\pkg\mod
 
 ```
@@ -53,3 +54,15 @@ go 1.12
 ```
 jalankan main.go => "go run main.go", maka library yang required akan otomatis terdownload ke C:\Users\user\go\pkg\mod selanjutnya main.go bisa dijalankan difolder manapun (enggak harus di gopath)
 
+# menggunakan library echo-gorm 
+- Download echo
+```
+go get -u github.com/labstack/echo/...
+```
+- Download https://github.com/markpenaranda/echo-gorm
+
+# menggunakan swagger pada echo-gorm
+- Tutorial https://github.com/swaggo/echo-swagger
+- rename echo-gorm/server.go => echo-gorm/main.go 
+- jika ada error "Can't use with echo/v4" open $GOPATH/github.com/swaggo/echo-swagger/swagger.go (atau jika menggunakan gomod C:/Users/user/go/pkg/mod/github.com/swaggo/echo-swagger/swagger.go) rename "github.com/labstack/echo/v4" ke "github.com/labstack/echo"
+- contoh penerapan D:\PROJECT\RISET\GO\revel\src\echo-gorm>
