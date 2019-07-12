@@ -67,7 +67,8 @@ go get -u github.com/labstack/echo/...
 - contoh penerapan D:\PROJECT\RISET\GO\revel\src\echo-gorm>
 
 # JWT
-https://echo.labstack.com/cookbook/jwt
+- https://echo.labstack.com/cookbook/jwt
+- https://www.naimibrahim.me/2018/11/20/echo-framework-gorm-blazing-fast-golang-server-side-application-authentication-example/
 
 # CronJob
 - github.com/jasonlvhit/gocron
