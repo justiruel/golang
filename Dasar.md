@@ -90,3 +90,38 @@ func main() {
     <- s.Start()
 }
 ```
+
+
+# curl
+- generate dengan insomnia postman
+- contoh hasil generate 
+```
+package main
+
+import (
+	"fmt"
+	"strings"
+	"net/http"
+	"io/ioutil"
+)
+
+func main() {
+
+	url := "http://localhost:1323/login"
+
+	payload := strings.NewReader("username=john&password=shhh!")
+
+	req, _ := http.NewRequest("POST", url, payload)
+
+	req.Header.Add("content-type", "application/x-www-form-urlencoded")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := ioutil.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
