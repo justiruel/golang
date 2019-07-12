@@ -17,7 +17,8 @@ go clean -i -x github.com/bxcodec/gomodmultiplies/v2
 remove manual folder $GOPATH/src/github.com/bxcodec/gomodmultiplies
 ```
 
-## Go Module (ref : https://medium.com/easyread/mencoba-go-module-pada-golang-13ae343ce529)
+## Go Module
+#### ref, https://medium.com/easyread/mencoba-go-module-pada-golang-13ae343ce529
 #### catatan, jika golang enggak support go mod maka upgrade dengan versi terbaru
 Guna : dengan menerapkan go mod, maka proyek enggak harus ditaruh gopath dapat di runing serta dapat mengakses library pada folder C:\Users\user\go\pkg\mod
 
