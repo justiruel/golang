@@ -65,3 +65,8 @@ go get -u github.com/labstack/echo/...
 - rename echo-gorm/server.go => echo-gorm/main.go 
 - jika ada error "Can't use with echo/v4" open $GOPATH/github.com/swaggo/echo-swagger/swagger.go (atau jika menggunakan gomod C:/Users/user/go/pkg/mod/github.com/swaggo/echo-swagger/swagger.go) rename "github.com/labstack/echo/v4" ke "github.com/labstack/echo"
 - contoh penerapan D:\PROJECT\RISET\GO\revel\src\echo-gorm>
+
+# JWT
+```
+https://echo.labstack.com/cookbook/jwt
+```
