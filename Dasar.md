@@ -70,8 +70,8 @@ go get -u github.com/labstack/echo/...
 https://echo.labstack.com/cookbook/jwt
 
 # CronJob
-github.com/jasonlvhit/gocron
-contoh
+- github.com/jasonlvhit/gocron
+- contoh
 ```
 package main
 import (
