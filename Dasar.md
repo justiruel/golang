@@ -67,6 +67,4 @@ go get -u github.com/labstack/echo/...
 - contoh penerapan D:\PROJECT\RISET\GO\revel\src\echo-gorm>
 
 # JWT
-```
 https://echo.labstack.com/cookbook/jwt
-```
