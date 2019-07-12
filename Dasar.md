@@ -42,8 +42,8 @@ func main() {
  fmt.Println(res)
 }
 ```
-perhatikan library yang imported (github.com/bxcodec/gomodmultiplies/v2) masukkan ke go.mod
-Open go.mod, tambahkan library yang required
+- jalankan main.go => "go run main.go", maka library yang required akan otomatis terdownload ke C:\Users\user\go\pkg\mod, selanjutnya main.go bisa dijalankan difolder manapun (enggak harus di gopath)
+Open go.mod, perhatikan semua required library (github.com/bxcodec/gomodmultiplies/v2) otomatis akan  tercatat di sini
 ```
 module github.com/justiruel/myproyek
 
@@ -53,8 +53,6 @@ require (
 
 go 1.12
 ```
-jalankan main.go => "go run main.go", maka library yang required akan otomatis terdownload ke C:\Users\user\go\pkg\mod selanjutnya main.go bisa dijalankan difolder manapun (enggak harus di gopath)
-
 # menggunakan library echo-gorm 
 - Download echo
 ```
