@@ -47,6 +47,8 @@ penjelasan =>
 ****lowercase(nama fungsi pada api.go) => misal nama fungsinya sama dengan word terakhir api service name "bebas()" maka enggak usah ditulis, contoh =>
 										  [host]:[port]/v1/bebas bukan [host]:[port]/v1/bebas/bebas 
 ```
+
+## jika antara api.go serta server.go beda server maka yang penting semua konek ke consul maka service discovery yang akan mengurusi, api.go hanya butuh define nama service nya saja
   
 #### nanya :
 
