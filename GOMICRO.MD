@@ -17,6 +17,7 @@ consul agent -dev
 ## running + register ke consul
 ```
 go run server.go -registry=consul
+go run api.go -registry=consul
 ```
 
 ## compile proto
