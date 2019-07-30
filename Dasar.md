@@ -125,3 +125,13 @@ func main() {
 
 }
 ```
+
+
+# PENTING
+- struct harus harus uppercase
+- nama package harus sesuai nama folder tempat file berada
+- agar sebuah fungsi dapat diakses dari package lain maka nama fungsi harus uppercase
+- untuk membuild aplikasi, masuk ke folder utama lalu ketik "go build" maka semua package akan menjadi 1 executable file
+- pm go alternative of pm2
+- kalo ada eror yang mencurigakan, restart VS code
+
