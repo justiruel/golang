@@ -5,37 +5,42 @@ rpc => untuk internal request lebih cepat karena passing byte data kalau rest ka
 service discovery dan load balancing lebih mudah karena integrated, tanpa gomikro registry ke consul ruwet (json post via rest) 
 pembagain per service nya enak
 
+## urutan 
 
-## Instalasi
+#### Instalasi
 https://micro.mu/docs/go-micro.html
 
-## running consul
+#### create new project
+micro new gomicro-learn/micro-srv --type="srv"
+
+#### compile proto
+```
+protoc --micro_out=. --go_out=. path/to/greeter.proto
+```
+
+#### running consul
 ```
 consul agent -dev
 ```
 
-## running + register ke consul
+#### running + register ke consul
 ```
 go run server.go -registry=consul
 go run api.go -registry=consul
 ```
 
-## compile proto
-```
-protoc --micro_out=. --go_out=. path/to/greeter.proto
-```
-
-## call rpc 
+#### call rpc 
 ```
 https://micro.mu/docs/cli.html
 micro call greeter Greeter.Hello '{"name":"john"}'  ----> jalankan di console linux
 ```
-## call rpc via web gui
+
+#### call rpc via web gui
 ```
 micro web
 ```
 
-## cara akses
+#### cara akses api
 ```
 format =>
 [host]:[port]/[****servicename]/[****lowercase(nama fungsi pada api.go)]
@@ -49,14 +54,14 @@ penjelasan =>
 										  [host]:[port]/v1/bebas bukan [host]:[port]/v1/bebas/bebas 
 ```
 
-## jika antara api.go serta server.go beda server maka yang penting semua konek ke consul maka service discovery yang akan mengurusi, api.go hanya butuh define nama service nya saja
+#### jika antara api.go serta server.go beda server maka yang penting semua konek ke consul maka service discovery yang akan mengurusi, api.go hanya butuh define nama service nya saja
   
 #### nanya :
 
-health check
-nanya otentikasi
-middleware 
-redis
+- health check
+- nanya otentikasi
+- middleware 
+- redis
 
 ```
 curl -d 'service=greeter' \
